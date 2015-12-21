@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="com.ignitionentertainment.dao.PendingChange" optimistic-lock="version" schema="challenge_accepted" table="pending_change">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="idChallenge" type="java.lang.Integer">
+      <column name="id_challenge" not-null="true"/>
+    </property>
+    <property name="idUser" type="java.lang.Integer">
+      <column name="id_user" not-null="true"/>
+    </property>
+    <property name="change" type="java.lang.Integer">
+      <column name="change" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

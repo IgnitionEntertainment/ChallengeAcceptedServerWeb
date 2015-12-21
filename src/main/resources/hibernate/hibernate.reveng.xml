@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="challenge_accepted" match-schema="challenge_accepted"/>
+  <table-filter match-name="challenge_tag"/>
+  <table-filter match-name="challenge"/>
+  <table-filter match-name="score"/>
+  <table-filter match-name="user"/>
+  <table-filter match-name="tag"/>
+  <table-filter match-name="challenge_user"/>
+  <table-filter match-name="valoration"/>
+  <table-filter match-name="location"/>
+  <table-filter match-name="pending_change"/>
+</hibernate-reverse-engineering>

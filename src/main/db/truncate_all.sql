@@ -1,0 +1,10 @@
+TRUNCATE TABLE challenge_accepted.challenge,
+challenge_accepted.challenge_tag,
+challenge_accepted.challenge_user,
+challenge_accepted.location,
+challenge_accepted.score,
+challenge_accepted.tag,
+challenge_accepted.user,
+challenge_accepted.valoration,
+challenge_accepted.pending_change
+CASCADE;

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09-dic-2015 23:36:54 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="com.ignitionentertainment.dao.Challenge" optimistic-lock="version" schema="challenge_accepted" table="challenge">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="creationTime" type="timestamp">
+      <column length="29" name="creation_time"/>
+    </property>
+    <property name="name" type="string">
+      <column name="name"/>
+    </property>
+    <property name="numParticipants" type="java.lang.Integer">
+      <column name="num_participants"/>
+    </property>
+    <property name="idState" type="java.lang.Integer">
+      <column name="id_state"/>
+    </property>
+    <property name="idLocation" type="java.lang.Integer">
+      <column name="id_location"/>
+    </property>
+    <property name="closingTime" type="timestamp">
+      <column length="29" name="closing_time"/>
+    </property>
+    <property name="challengeTime" type="timestamp">
+      <column length="29" name="challenge_time"/>
+    </property>
+    <property name="comments" type="string">
+      <column name="comments"/>
+    </property>
+    <property name="idCreator" type="java.lang.Integer">
+      <column name="id_creator"/>
+    </property>
+    <property name="modificationTime" type="timestamp">
+      <column length="29" name="modification_time"/>
+    </property>
+  </class>
+</hibernate-mapping>

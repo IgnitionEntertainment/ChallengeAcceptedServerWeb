@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09-dic-2015 23:36:54 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="com.ignitionentertainment.dao.Location" optimistic-lock="version" schema="challenge_accepted" table="location">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="longitude" type="java.lang.Double">
+      <column name="longitude" precision="17" scale="17"/>
+    </property>
+    <property name="latitude" type="java.lang.Double">
+      <column name="latitude" precision="17" scale="17"/>
+    </property>
+  </class>
+</hibernate-mapping>

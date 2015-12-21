@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09-dic-2015 23:36:54 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="com.ignitionentertainment.dao.User" optimistic-lock="version" schema="challenge_accepted" table="user">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="idLocation" type="java.lang.Integer">
+      <column name="id_location"/>
+    </property>
+    <property name="idScore" type="java.lang.Integer">
+      <column name="id_score" not-null="true"/>
+    </property>
+    <property name="username" type="string">
+      <column name="username"/>
+    </property>
+    <property name="email" type="string">
+      <column name="email"/>
+    </property>
+    <property name="password" type="string">
+      <column name="password"/>
+    </property>
+    <property name="idAvatar" type="java.lang.Integer">
+      <column name="id_avatar"/>
+    </property>
+  </class>
+</hibernate-mapping>

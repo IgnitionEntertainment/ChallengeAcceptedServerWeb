@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09-dic-2015 23:36:54 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="com.ignitionentertainment.dao.Score" optimistic-lock="version" schema="challenge_accepted" table="score">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="wonChallenges" type="java.lang.Integer">
+      <column name="won_challenges"/>
+    </property>
+    <property name="lostChallenges" type="java.lang.Integer">
+      <column name="lost_challenges"/>
+    </property>
+    <property name="totalChallenges" type="java.lang.Integer">
+      <column name="total_challenges"/>
+    </property>
+    <property name="totalScore" type="java.lang.Integer">
+      <column name="total_score"/>
+    </property>
+  </class>
+</hibernate-mapping>
